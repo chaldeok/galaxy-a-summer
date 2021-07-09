@@ -35,6 +35,7 @@
   h3 {
     @include adaptive-font(42, 24);
     font-family: $font-title;
+    margin-bottom: 15px;
   }
   p {
     @include adaptive-font(24, 17);
@@ -72,7 +73,7 @@
 .phone-items {
   grid-template-areas: "item-1 item-2 item-3";
   padding: 0 27px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 @media screen and(max-width: 1399px) {
@@ -111,10 +112,63 @@
   }
 }
 
+.phone-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.phone-item__name {
+  @include adaptive-font(24, 18);
+  font-family: $font-title;
+  margin: 20px 0;
+}
+.phone-item__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 143px;
+  height: 46px;
+  border-radius: 22px;
+  border: 2px solid #171717;
+  color: #171717;
+  font-size: 18px;
+
+  transition: background-color 0.23s ease-out;
+  &:hover,
+  &:focus {
+    background-color: lighten(#171717, 70%);
+  }
+  &:active {
+    background-color: lighten(#171717, 30%);
+}
+}
 .photo-container {
   img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .item-advantages {
+    flex-direction: column;
+  }
+  .item-advantages__left {
+    width: 100%;
+  }
+  .item-advantages__right {
+    width: 100%;
+  }
+  .photo-text,
+  .text-photo {
+    .item-advantages__left {
+      order: 2;
+    }
+    .item-advantages__right {
+      order: 1;
+      padding: 0;
+      margin-bottom: 20px;
+    }
   }
 }
 
