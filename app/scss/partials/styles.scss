@@ -12,6 +12,13 @@
   }
 }
 
+.video-container {
+  iframe {
+    width: 100%;
+    height: 90vh;
+  }
+}
+
 .item-advantages {
   display: flex;
   justify-content: space-between;
