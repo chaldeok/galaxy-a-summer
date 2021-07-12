@@ -5,6 +5,12 @@
   }
 }
 
+picture {
+  img {
+    width: 100%;
+  }
+}
+
 .video-container {
   iframe {
     width: 100%;
@@ -68,6 +74,7 @@
   grid-template-areas: "item-1 item-2 item-3";
   padding: 0 27px;
   margin-bottom: 20px;
+  column-gap: 20px;
 }
 
 .phone-items {
@@ -109,6 +116,14 @@
   span {
     @include adaptive-font(28, 18);
     font-family: $font-text;
+  }
+}
+
+@media screen and(min-width: 3800px) {
+  .photo-item {
+    span {
+      font-size: 45px;
+    }
   }
 }
 
