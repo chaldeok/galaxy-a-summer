@@ -1,10 +1,32 @@
 <div class="main-container">
-  <div class="section main-promo">
-    <picture>
+  <div class="section main-promo swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide slide-desk"><img src="./img/A72-A52-A32-desk.jpg" alt="A-series phones banner"></div>
+      <div class="swiper-slide slide-desk"><img src="./img/A72-desk.jpg" alt="A72 phone banner"></div>
+      <div class="swiper-slide slide-desk"><img src="./img/A52-desk.jpg" alt="A52 phone banner"></div>
+      <div class="swiper-slide slide-desk"><img src="./img/A32-desk.jpg" alt="A32 phone banner"></div>
+
+      <div class="swiper-slide slide-mob"><img src="./img/A72-A52-A32-mob.jpg" alt="A-series phones banner"></div>
+      <div class="swiper-slide slide-mob"><img src="./img/A72-mob.jpg" alt="A72 phone banner"></div>
+      <div class="swiper-slide slide-mob"><img src="./img/A52-mob.jpg" alt="A52 phone banner"></div>
+      <div class="swiper-slide slide-mob"><img src="./img/A32-mob.jpg" alt="A32 phone banner"></div>
+    </div>
+    <!-- If we need pagination -->
+    <!--<div class="swiper-pagination"></div>-->
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+<!--    <picture>
       <source media="(min-width: 769px)" srcset="./img/main-promo-bg-desk.webp"/>
       <source media="(max-width: 768px)" srcset="./img/main-promo-bg-mob.webp"/>
       <img src="./img/main-promo-bg-desk.webp" alt="Main promo section image"/>
-    </picture>
+    </picture>-->
   </div>
 </div>
 

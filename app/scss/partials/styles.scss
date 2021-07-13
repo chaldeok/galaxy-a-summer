@@ -119,6 +119,14 @@ picture {
   }
 }
 
+.swiper-slide {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
 @media screen and(min-width: 3800px) {
   .photo-item {
     span {
@@ -155,7 +163,7 @@ picture {
   }
   &:active {
     background-color: lighten(#171717, 30%);
-}
+  }
 }
 .photo-container {
   img {
@@ -164,7 +172,22 @@ picture {
   }
 }
 
+@media screen and(min-width: 769px) {
+  .slide-desk {
+    display: block;
+  }
+  .slide-mob {
+    display: none;
+  }
+}
+
 @media screen and(max-width: 768px) {
+  .slide-desk {
+    display: none;
+  }
+  .slide-mob {
+    display: block;
+  }
   .item-advantages {
     flex-direction: column;
   }
@@ -187,4 +210,8 @@ picture {
   }
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: gainsboro;
+}
 
